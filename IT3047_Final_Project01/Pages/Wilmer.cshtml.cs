@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace IT3047_Final_Project01.Pages
 {
-    public class PrivacyModel : PageModel
+    public class WilmerModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<WilmerModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public WilmerModel(ILogger<WilmerModel> logger)
         {
             _logger = logger;
         }
