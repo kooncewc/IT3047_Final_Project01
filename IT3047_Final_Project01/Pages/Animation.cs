@@ -1,19 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace IT3047_Final_Project01.Pages
 {
-    public class PrivacyModel : PageModel
+    public class AnimationModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<AnimationModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public AnimationModel(ILogger<AnimationModel> logger)
         {
             _logger = logger;
         }
 
         public void OnGet()
         {
+
         }
     }
 }
