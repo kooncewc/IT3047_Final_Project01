@@ -1,4 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using IT3047_Final_Project01.Models;
+
+
 namespace IT3047_Final_Project01.Models
 {
     public class MovieContext : DbContext
@@ -7,7 +12,7 @@ namespace IT3047_Final_Project01.Models
             : base(options)
         { }
 
-        public DbSet<MovieModel> Movies { get; set; }
+        public DbSet<MovieModel> Movies2 { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -17,10 +17,10 @@ namespace IT3047_Final_Project01.Controllers
 
         public IActionResult Index()
         {
-            var movies = context.Movies
+            var movies2 = context.Movies2
                 .OrderBy(m => m.Name)
                 .ToList();
-            return View(movies);
+            return View(movies2);
         }
     }
 }

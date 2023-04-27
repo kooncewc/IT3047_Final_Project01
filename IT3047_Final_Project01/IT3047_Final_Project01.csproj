@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <Compile Remove="Pages\Comedy.cs" />
   </ItemGroup>
 
   <ItemGroup>

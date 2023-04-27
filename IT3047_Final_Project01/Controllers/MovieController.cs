@@ -24,7 +24,7 @@ namespace IT3047_Final_Project01.Controllers
         public IActionResult Edit(int id)
         {
             ViewBag.Action = "Edit";
-            var movie = context.Movies.Find(id);
+            var movie = context.Movies2.Find(id);
             return View(movie);
         }
 
@@ -34,9 +34,9 @@ namespace IT3047_Final_Project01.Controllers
             if (ModelState.IsValid)
             {
                 if (movie.MovieId == 0)
-                    context.Movies.Add(movie);
+                    context.Movies2.Add(movie);
                 else
-                    context.Movies.Update(movie);
+                    context.Movies2.Update(movie);
                 context.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
@@ -50,14 +50,14 @@ namespace IT3047_Final_Project01.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            var movie = context.Movies.Find(id);
+            var movie = context.Movies2.Find(id);
             return View(movie);
         }
 
         [HttpPost]
         public IActionResult Delete(MovieModel movie)
         {
-            context.Movies.Remove(movie);
+            context.Movies2.Remove(movie);
             context.SaveChanges();
             return RedirectToAction("Index", "Home");
         }
